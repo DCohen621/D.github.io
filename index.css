@@ -1,20 +1,116 @@
+@keyframes stretch {
+  0% { transform: scale(1, 1); }
+  25% { transform: scale(2, 1); }
+  50% { transform: scale(1, 1); }
+  75% { transform: scale(1, 2); }
+  100% { transform: scale(1, 1); }
+  }
+  @keyframes color {
+    0% { background-color: #ed0000; }
+    25% {  background-color:orange; }
+    50% { background-color:yellow; }
+    75% { background-color: rgb(12, 209, 12);}
+    85% { background-color: dodgerblue; }
+    100% { background-color: rgb(153, 14, 153); }
+    }
+
 @font-face {
     font-family:'Hello';
     src: url(SourceCodePro-Black.ttf);
 }
 body {
-    color:dodgerblue;
+    color:rgb(28, 127, 227);
     font-family: Hello;
+        
+}
+body.light-mode {
+    background-color: rgb(99, 91, 91);  
+    color: dodgerblue;
+}
+.green {
+  animation-name: color;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-delay: 1ms;
+}
+
+h1 {
+  background-color: rgba(103, 105, 107, 0.751);
+  color: #000000;
+  text-transform:capitalize ;
+  border: solid;
+  border-color: dodgerblue;
+  border-width: 4px;
+  padding: 2px;
+  text-align: center;
+text-shadow:
+1px 1px 1px dodgerblue,
+2px 2px 1px dodgerblue;
 }
 img {
     width: 100%;
     border: solid;
     border-color: dodgerblue;
     border-width: 5px;
+    max-width: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    
+}
+.hello {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+img.Class_2 {
+  width: 100%;
+  max-width: 100%;
+  min-width: 20%;
+    border: solid;
+    border-color: dodgerblue;
+    border-width: 5px;
+    object-fit: cover;
+    margin: 30px;
+}
+
+img.Class_3 {
+  width: 100%;
+    border: solid;
+    border-color: dodgerblue;
+    border-width: 5px;
+    max-width: 100%;
+    min-width: 20%;
+    object-fit: cover;
+    margin: 3px;
+}
+h4.Class_1 {
+  border: solid;
+  border-color: dodgerblue;
+  margin: 25px;
+  padding: 6px;
+  border-width: 4px;
 }
 td {
- width: 50%;
+  width: 50%;
+ }
+
+h4.Class_2 {
+  border: solid;
+  border-color: dodgerblue;
+  padding: 6px;
+  border-width: 4px;
+  margin: 0.1px;
 }
+h4.Class_3 {
+  border: solid;
+  border-color: dodgerblue;
+  padding: 6px;
+  border-width: 4px;
+  margin: 35px;
+}
+
+
 .life ul{
     list-style-type: none;
     margin: 0;
@@ -49,13 +145,14 @@ li {
   /* Style the links inside the navigation bar */
   .topnav a {
     float: left;
-    color: dodgerblue;
+    color:dodgerblue;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
     border: solid;
     border-width: 3px;
+    
   }
   
   /* Change the color of links on hover */
@@ -98,3 +195,4 @@ li {
       transform: none;
     }
   }
+  
