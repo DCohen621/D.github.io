@@ -19,6 +19,65 @@
     font-family:'Hello';
     src: url(SourceCodePro-Black.ttf);
 }
+html {
+  height: 100%;
+}
+body {
+  padding: 32px 0;
+  height: 100%;
+  /* Center box */
+  display: grid;
+  place-content: center;
+}
+section {
+  display: flex;
+  gap: 16px;
+}
+.box {
+  width: 75px;
+  height: 75px;
+  background: rgb(238, 237, 238);
+  padding: 8px;
+  display: grid;
+  place-content: center;
+  color: white;
+  text-align: center;
+  border-radius: 50%;
+  
+}
+
+
+
+
+
+
+
+.baallss {
+  width: 100%;
+  align-items: center;
+}
+
+
+
+
+
+@keyframes drop-in {
+  from {
+    transform:
+      rotate(-30deg) translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform:
+      rotate(0deg) translateY(0%);
+    opacity: 1;
+  }
+}
+@font-face {
+  font-family: Noisy;
+  src: url(RubikMonoOne-Regular.ttf);
+}
+
 body {
     color:rgb(28, 127, 227);
     font-family: Hello;
@@ -29,8 +88,16 @@ body.light-mode {
     color: dodgerblue;
 }
 #btnID {
-  float: right;
+  float: center;
+  font-family: Noisy;
   padding: 10px;
+  background-color: #ff0000;
+  border-style: groove;
+  border-color: rgb(83, 12, 12);
+  border-width: 40px;
+  margin-left: 33%;
+  font-size: 30px;
+ 
 }
 
 .green {
@@ -64,6 +131,9 @@ img {
     object-fit: cover;
     
 }
+
+
+
 .hello {
   display: flex;
   align-items: center;
@@ -90,6 +160,12 @@ img.Class_3 {
     object-fit: cover;
     margin: 3px;
 }
+
+img.Class_4{
+  animation: drop-in 2000ms;
+}
+
+
 h4.Class_1 {
   border: solid;
   border-color: dodgerblue;
@@ -97,6 +173,9 @@ h4.Class_1 {
   padding: 10px;
   border-width: 4px;
 }
+
+
+
 h3.Class_1 {
   margin: 25px;
   margin-bottom: 30px;
@@ -106,6 +185,9 @@ h3.Class_1 {
 h2.Class_1 {
   color: dodgerblue;
 }
+
+
+
 ol.Class_1 {
   margin: 20px;
   margin-top: 25px;
@@ -169,6 +251,8 @@ h4.Class_4 {
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
+  padding-left: 7px;
+  padding-right: 7px;
   margin: 40px;
 }
 
@@ -207,6 +291,28 @@ li {
     overflow: hidden;
     border-width: 4px;
     border-color: dodgerblue;
+  }
+  body {
+    padding: 32px 0;
+    height: 100%;
+    /* Center box */
+    display: grid;
+    place-content: center;
+  }
+  section {
+    display: flex;
+    gap: 16px;
+  }
+  .box {
+    width: 75px;
+    height: 75px;
+    background: slateblue;
+    padding: 8px;
+    display: grid;
+    place-content: center;
+    color: white;
+    text-align: center;
+    border-radius: 50%;
   }
   
   /* Style the links inside the navigation bar */

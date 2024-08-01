@@ -6,12 +6,46 @@
     <link rel="icon" type="image/x-icon" href="https://th.bing.com/th/id/R.b3b83c99868807428c85448c90d92089?rik=7NqQ9ON8rOnwMA&riu=http%3a%2f%2fwikiclipart.com%2fwp-content%2fuploads%2f2017%2f02%2fLacrosse-sticks-clipart-clipartfest.jpeg&ehk=fczVOv9CMPtg5OvrEz%2bkvTbBeVen4o1BBwz2sVZhuYY%3d&risl=&pid=ImgRaw&r=0">
     <link rel="stylesheet" href="index.css">
     <script src="Index.JS" defer></script>
+
+
+    <style>
+        @keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(
+      var(--bounce-offset)
+    );
+  }
+}
+
+.box {
+  animation:
+    bounce alternate infinite
+    cubic-bezier(.2, .65, .6, 1);
+}
+.box.one {
+  --bounce-offset: -20px;
+  animation-duration: 200ms;
+}
+.box.two {
+  --bounce-offset: -30px;
+  animation-duration: 300ms;
+}
+.box.three {
+  --bounce-offset: -40px;
+  animation-duration: 400ms;
+}
+    </style>
+
 </head>
-<body>
+
 <body style="background-color:black">
     <header>
         <h1 style="color:rgb(8, 9, 10);">The Third reason why lacrosse is the best sport is it develops team building skills and comunication skills </h1>
     </header>
+    
     
     <!-- Top navigation -->
     <div class="topnav">
@@ -39,3 +73,20 @@
     </H4>
   
     <img src="images.jpg" class="Class_3">
+    <div class="baallss">
+      <section>
+        <div class="box one" style="visibility: hidden;"></div>
+        <div class="box two" style="visibility: hidden;"></div>
+        <div class="box three" style="visibility: hidden;"></div>
+        <div class="box one"></div>
+        <div class="box two"></div>
+        <div class="box three"></div>
+        <div class="box one" style="visibility: hidden;"></div>
+        <div class="box two" style="visibility: hidden;"></div>
+        <div class="box three" style="visibility: hidden;"></div>
+      </section> </div>
+      
+    
+    </body>
+    
+      </html>

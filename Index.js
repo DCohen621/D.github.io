@@ -2,6 +2,7 @@ let result = document.getElementById("GFG");
 
     function changeColor(color) {
         document.body.style.background = color;
+        document.getElementsByClassName('topNav').style.background = color;
     }
 
     function myFunc() {
@@ -10,6 +11,7 @@ let result = document.getElementById("GFG");
     function myFunc2() {
         changeColor('black');
     }
+    
     
     function show() {
         /* Access image by id and change 
